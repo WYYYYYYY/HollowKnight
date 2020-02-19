@@ -1,0 +1,813 @@
+fileFormatVersion: 2
+guid: a63094edbef730a42a3243c19a7b159f
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_0
+    21300002: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_1
+    21300004: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_2
+    21300006: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_3
+    21300008: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_4
+    21300010: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_5
+    21300012: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_6
+    21300014: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_7
+    21300016: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_8
+    21300018: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_9
+    21300020: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_10
+    21300022: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_11
+    21300024: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_12
+    21300026: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_13
+    21300028: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_14
+    21300030: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_15
+    21300032: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_16
+    21300034: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_17
+    21300036: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_18
+    21300038: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_19
+    21300040: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_20
+    21300042: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_21
+    21300044: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_22
+    21300046: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_23
+    21300048: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_24
+    21300050: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_25
+    21300052: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_26
+    21300054: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_27
+    21300056: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_28
+    21300058: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_29
+    21300060: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_30
+    21300062: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_31
+    21300064: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_32
+    21300066: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_33
+  externalObjects: {}
+  serializedVersion: 9
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1800
+        width: 279
+        height: 83
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18209838d1c825449aa24ca83e79214c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1886
+        width: 278
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa12c4e8ce17bb44fa5e026ef40a2eee
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_2
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 1798
+        width: 214
+        height: 114
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 258650ff605e5094b80b69752d7eb4e9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_3
+      rect:
+        serializedVersion: 2
+        x: 679
+        y: 1779
+        width: 252
+        height: 106
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c06d3e0f8613e1443a74de45499ab510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_4
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 1553
+        width: 521
+        height: 379
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b33fd0a3c46ab434988ed55368281a25
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_5
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1823
+        width: 11
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b700d3aa28554a14487dcd2755189e35
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1110
+        width: 716
+        height: 690
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dab3e53c854396847b07923446752ef7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_7
+      rect:
+        serializedVersion: 2
+        x: 409
+        y: 1396
+        width: 416
+        height: 407
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cd6cac933b33ea439dba1a572e380ca
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_8
+      rect:
+        serializedVersion: 2
+        x: 1423
+        y: 1255
+        width: 251
+        height: 363
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19550a5c75940cb48b48a791419e1523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_9
+      rect:
+        serializedVersion: 2
+        x: 1440
+        y: 1614
+        width: 278
+        height: 208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 605ea8efcceb6ea4ab9dba08f6d431e5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_10
+      rect:
+        serializedVersion: 2
+        x: 1666
+        y: 1497
+        width: 277
+        height: 236
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec27112df85a0df47b036613bd725ece
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_11
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 1380
+        width: 11
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 559362c7b31cadd4e9f3355742ef1951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_12
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 1223
+        width: 338
+        height: 390
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d88af40c8be18de4f8b07759167ccc56
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_13
+      rect:
+        serializedVersion: 2
+        x: 1674
+        y: 1167
+        width: 220
+        height: 327
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e13576ec8d7cec446ab106f71e185def
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_14
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 874
+        width: 209
+        height: 477
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5b24762792bc2a47ab0aecc6a97e417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_15
+      rect:
+        serializedVersion: 2
+        x: 1583
+        y: 1252
+        width: 5
+        height: 4
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98b1cd066958ded4682406f1334513fd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_16
+      rect:
+        serializedVersion: 2
+        x: 674
+        y: 836
+        width: 414
+        height: 402
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 843807bda0d6e414497482c39d837c96
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_17
+      rect:
+        serializedVersion: 2
+        x: 1540
+        y: 1233
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2c116fceb2909e418f84b1e1853cad7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_18
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 850
+        width: 71
+        height: 148
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74dda21f1658dcf48a516d3b81efca6d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_19
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 844
+        width: 136
+        height: 265
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bee7f1e67af4f464782c7649220bf71f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_20
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 732
+        width: 45
+        height: 380
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6caee351a6687f94a966f389f701f4ad
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_21
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 721
+        width: 58
+        height: 393
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aed6cdec1375f74eb75eba2636c994a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_22
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 843
+        width: 154
+        height: 293
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f924b4827acbf074fa49a3352573d4fa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_23
+      rect:
+        serializedVersion: 2
+        x: 660
+        y: 858
+        width: 46
+        height: 108
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49f8387eff85146409920d580a8536fb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_24
+      rect:
+        serializedVersion: 2
+        x: 1251
+        y: 330
+        width: 269
+        height: 549
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80cf05a8b3bb366489ea9567fe1b721d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_25
+      rect:
+        serializedVersion: 2
+        x: 1496
+        y: 625
+        width: 253
+        height: 547
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c86143ed767fae944b28926899127f49
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 812
+        height: 821
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 902c36d70c7d6c2418aac5fe077a4096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_27
+      rect:
+        serializedVersion: 2
+        x: 710
+        y: 336
+        width: 211
+        height: 453
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d1e02562af8a6547806fc5565f69d51
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_28
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 4
+        width: 416
+        height: 747
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1193e1257aad14149bc36b5c166a3779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_29
+      rect:
+        serializedVersion: 2
+        x: 1519
+        y: 442
+        width: 393
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e106cb83c9d4ebf4b9b43e7483016c5e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_30
+      rect:
+        serializedVersion: 2
+        x: 1952
+        y: 0
+        width: 51
+        height: 699
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e09f85a5253b24441b4c8425a8faa830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_31
+      rect:
+        serializedVersion: 2
+        x: 980
+        y: 0
+        width: 16
+        height: 5
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70c3b2cb0dd4dcb4698a44a7981c71af
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_32
+      rect:
+        serializedVersion: 2
+        x: 1061
+        y: 0
+        width: 213
+        height: 118
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86266aead95322c48a1609f7c7b643ee
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SpriteAtlasTexture-Abyss_Descent-2048x2048-fmt12_33
+      rect:
+        serializedVersion: 2
+        x: 1520
+        y: 0
+        width: 440
+        height: 442
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 367b2806bc1da7745acfed50073a33df
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 650566399d9e5244e878778efe5afc55
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
