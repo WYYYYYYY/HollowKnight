@@ -21,7 +21,7 @@ public class CharacterControl : MonoBehaviour
     public bool isground;//是否在地面
     [Header("距离障碍物的最小距离")]
     public float distance;//距离障碍物的最小距离
-    Vector2 boxsize = new Vector2(0.55f, 1.15f);//盒型碰撞检测射线尺寸
+    public Vector2 boxsize = new Vector2(0.55f, 1.15f);//盒型碰撞检测射线尺寸
     public bool isJump;
     [Header("跳跃蓄力大小")]
     public float jumpForce;
@@ -45,11 +45,16 @@ public class CharacterControl : MonoBehaviour
     public AudioSource startRunAudio;
     public AudioSource fallingAudio;
     public AudioSource wallSlideAudio;
+    public AudioSource firaBallAudio;
+    public AudioSource damageAudio;
+    public AudioSource rejectAudio;
     public List<PolygonCollider2D> atkColliders;//攻击碰撞器
     BoxCollider2D currentatkColliders;
     Animator playeranim;
-    int playerLayerMask;
+    public int playerLayerMask;
     public int climbCount;
+    bool isAttackJump;
+    GameObject theBall;
     IEnumerator RushCoroutine(float time)
     {
         InputManager.getInstance().stopInput();
@@ -86,6 +91,27 @@ public class CharacterControl : MonoBehaviour
         canRushTime = 0.3f;
     }
 
+    IEnumerator fireballCoroutine()//复仇之魂
+    {
+        InputManager.getInstance().stopInput();
+        canGravity = false;
+        move.y = 0;
+        move.x = 0;
+        theBall = Instantiate(theBall,transform);
+        yield return new WaitForSeconds(0.3f);//延迟time秒后执行
+        if(currentDir==PlayerDir.Left)
+        {
+            transform.position += new Vector3(0.1f,0,0);
+        }
+        else
+        {
+            transform.position -= new Vector3(0.1f, 0, 0);
+        }
+        InputManager.getInstance().KeyInit();
+        gravity = 50;
+        jumpForce = 40;
+        canGravity = true;
+    }
     IEnumerator ClimpJump()//墙上跳跃
     {
         InputManager.getInstance().stopInput();   //此时不接受其余输入
@@ -113,9 +139,47 @@ public class CharacterControl : MonoBehaviour
         isclimbJump = false;
     }
 
-    IEnumerator AttackReject()//攻击位移修正
+    IEnumerator AttackDownJump()
     {
-        yield return new WaitForSeconds(0.15f);
+        isAttackJump = true;
+        move.y = 40 * Time.deltaTime;
+        gravity = 0;
+        yield return new WaitForSeconds(0.2f);
+        gravity = 50;
+        isAttackJump = false;
+    }
+
+    public void AttackDamage()
+    {
+        damageAudio.Play();
+        StartCoroutine(AttackCor());
+    }
+
+    public void AttackReject()
+    {
+        rejectAudio.Play();
+        StartCoroutine(AttackCor());
+    }
+    public void AttackJump()
+    {
+        move.y = 40 * Time.deltaTime;
+        rejectAudio.Play();
+        StartCoroutine(AttackDownJump());
+
+    }
+    IEnumerator AttackCor()//普通左右攻击位移修正
+    {
+        InputManager.getInstance().stopInput();
+        if (currentDir == PlayerDir.Left)
+        {
+            transform.position += new Vector3(0.5f,0,0);
+        }
+        else
+        {
+            transform.position -= new Vector3(0.5f, 0, 0);
+        }
+        yield return new WaitForSeconds(0.1f);
+        InputManager.getInstance().KeyInit();
     }
 
     void LRmove()//左右帧移动
@@ -168,13 +232,16 @@ public class CharacterControl : MonoBehaviour
 
     void UDmove()//上下帧移动
     {
-        if (isground)
+        if (isAttackJump)
+        {
+            move.y += 40 * Time.deltaTime;
+        }else if (isground)
         {
             if (Input.GetKeyDown(InputManager.getInstance().jumpKey))
             {
                 jumpAduio.Play();
                 isJump = true;  //进入跳跃状态
-                move.y += jumpForce;//初始添加向上的力
+                move.y += jumpForce * Time.deltaTime;//初始添加向上的力
                 jumpTime = 0;//蓄力时间清零
             }
             else
@@ -202,7 +269,7 @@ public class CharacterControl : MonoBehaviour
                     jumpTime += Time.deltaTime;//蓄力时间增加
                     if (jumpTime < maxJumpTime)
                     {
-                        move.y += jumpForce;//蓄力
+                        move.y += jumpForce * Time.deltaTime;//蓄力
                     }
                     else
                     {
@@ -312,6 +379,8 @@ public class CharacterControl : MonoBehaviour
                 if (isClimb)//退出爬墙
                 {
                     isClimb = false;
+                    playeranim.SetBool("isclimb", false);
+                    playeranim.Play("startfalling");
                     climbCount = 0;
                 }
             }
@@ -324,16 +393,19 @@ public class CharacterControl : MonoBehaviour
                 switch (currentDir)
                 {
                     case PlayerDir.Left:
-                        hit2D = Physics2D.Raycast(transform.position, Vector3.left, boxsize.x);
+                        hit2D = Physics2D.Raycast(transform.position, Vector3.left, boxsize.x,playerLayerMask);
                         break;
                     case PlayerDir.Right:
-                        hit2D = Physics2D.Raycast(transform.position, Vector3.right, boxsize.x);
+                        hit2D = Physics2D.Raycast(transform.position, Vector3.right, boxsize.x,playerLayerMask);
                         break;
                 }
 
                 if (hit2D.collider == null)
                 {
-                    isClimb = false;//退出爬墙
+                    Debug.Log("tuichupaqiang");
+                    isClimb = false;
+                    playeranim.SetBool("isclimb", false);
+                    playeranim.Play("startfalling");
                     climbCount = 0;
                 }
             }
@@ -454,6 +526,14 @@ public class CharacterControl : MonoBehaviour
         }
     }
 
+    void InitPrefab()
+    {
+        if (theBall == null)
+        {
+            theBall = (GameObject)Resources.Load("prefabs/fireball");
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -467,9 +547,12 @@ public class CharacterControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        InitPrefab();
         LRmove();
         UDmove();
         //Attack();
         MoveCheck();
     }
+
+   
 }

@@ -13,6 +13,10 @@ public class StartFallingBehaviour : CharacterStateBase
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+        if (Input.GetKeyDown(InputManager.getInstance().fireballKey))
+        {
+            animator.SetTrigger("fireballtrigger");
+        }
         if (GetCharacterControl(animator).isRush)
         {
             animator.SetTrigger("rushtrigger");

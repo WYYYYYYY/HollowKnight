@@ -22,12 +22,12 @@ public class ClimbJumpBehaviour : CharacterStateBase
     {
         if (GetCharacterControl(animator).currentDir == CharacterControl.PlayerDir.Left)
         {
-            GetCharacterControl(animator).transform.Rotate(0, -180, 0);
+            GetCharacterControl(animator).transform.Rotate(0, 180, 0);
             GetCharacterControl(animator).currentDir = CharacterControl.PlayerDir.Right;
         }
         else if (GetCharacterControl(animator).currentDir == CharacterControl.PlayerDir.Right)
         {
-            GetCharacterControl(animator).transform.Rotate(0, 180, 0);
+            GetCharacterControl(animator).transform.Rotate(0, -180, 0);
             GetCharacterControl(animator).currentDir = CharacterControl.PlayerDir.Left;
         }
         animator.ResetTrigger("climbjumptrigger");

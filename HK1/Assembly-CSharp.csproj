@@ -63,12 +63,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\AttackDownControl.cs" />
+    <Compile Include="Assets\HurtDetected.cs" />
+    <Compile Include="Assets\scripts\AttackControl.cs" />
+    <Compile Include="Assets\scripts\BalderAttacked.cs" />
+    <Compile Include="Assets\scripts\BalderControl.cs" />
     <Compile Include="Assets\scripts\behavior\AttackDownBehaviour.cs" />
     <Compile Include="Assets\scripts\behavior\AttackLRBehaviour.cs" />
     <Compile Include="Assets\scripts\behavior\AttackUpBehaviour.cs" />
     <Compile Include="Assets\scripts\behavior\ClimbingBehaviour.cs" />
     <Compile Include="Assets\scripts\behavior\ClimbJumpBehaviour.cs" />
     <Compile Include="Assets\scripts\behavior\FallingBehaviour.cs" />
+    <Compile Include="Assets\scripts\behavior\FireBallBehaviour.cs" />
     <Compile Include="Assets\scripts\behavior\IdleBehaviour.cs" />
     <Compile Include="Assets\scripts\behavior\LandingBehaviour.cs" />
     <Compile Include="Assets\scripts\behavior\RotateBehaviour.cs" />
@@ -79,9 +85,13 @@
     <Compile Include="Assets\scripts\behavior\StartRunBehaviour.cs" />
     <Compile Include="Assets\scripts\behavior\StopBehaviour.cs" />
     <Compile Include="Assets\scripts\behavior\StopJumpBehaviour.cs" />
+    <Compile Include="Assets\scripts\CameraControl.cs" />
     <Compile Include="Assets\scripts\CharacterControl.cs" />
     <Compile Include="Assets\scripts\CharacterStateBase.cs" />
+    <Compile Include="Assets\scripts\FireBallControl.cs" />
     <Compile Include="Assets\scripts\InputManager.cs" />
+    <Compile Include="Assets\scripts\LittleBalderControl.cs" />
+    <Compile Include="Assets\scripts\TrapOneControl.cs" />
     <Reference Include="Cinemachine">
       <HintPath>C:/Users/王玉琰/Desktop/HK1/Library/ScriptAssemblies/Cinemachine.dll</HintPath>
     </Reference>

@@ -13,6 +13,11 @@ public class RunningBehaviour : CharacterStateBase
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)//跑动动画可以起跳，停止，掉落
     {
+        if (Input.GetKeyDown(InputManager.getInstance().fireballKey))
+        {
+            animator.SetTrigger("fireballtrigger");
+            animator.SetBool("isrun", false);
+        }
         if (GetCharacterControl(animator).isRush)
         {
             animator.SetTrigger("rushtrigger");

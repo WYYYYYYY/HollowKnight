@@ -29,7 +29,11 @@ public class StartRunBehaviour : CharacterStateBase
             animator.SetBool("isrun", false);
         }
 
-
+        if (Input.GetKeyDown(InputManager.getInstance().fireballKey))
+        {
+            animator.SetTrigger("fireballtrigger");
+            animator.SetBool("isrun", false);
+        }
 
         if (GetCharacterControl(animator).currentDir==CharacterControl.PlayerDir.Right)//向右起跑时
         {

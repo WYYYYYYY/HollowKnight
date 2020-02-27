@@ -24,6 +24,7 @@ public class ClimbingBehaviour : CharacterStateBase
             GetCharacterControl(animator).isClimb = false;
             GetCharacterControl(animator).climbCount = 0;
         }
+
     }
 
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state

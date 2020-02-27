@@ -29,7 +29,13 @@ public class StopBehaviour : CharacterStateBase
             animator.ResetTrigger("stoptrigger");
         }
 
-        if(Input.GetKey(InputManager.getInstance().moveRightKey)&& Input.GetKey(InputManager.getInstance().moveLeftKey))//如果两键同时按
+        if (Input.GetKeyDown(InputManager.getInstance().fireballKey))
+        {
+            animator.SetTrigger("fireballtrigger");
+            animator.ResetTrigger("stoptrigger");
+        }
+
+        if (Input.GetKey(InputManager.getInstance().moveRightKey)&& Input.GetKey(InputManager.getInstance().moveLeftKey))//如果两键同时按
         {
             //什么也不做等待进入idle
         }

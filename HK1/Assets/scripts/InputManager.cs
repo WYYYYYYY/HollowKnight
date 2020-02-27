@@ -28,6 +28,8 @@ public class InputManager : MonoBehaviour
     public KeyCode jumpKey;
     [Header("冲刺按键")]
     public KeyCode rushKey;
+    [Header("复仇之魂按键")]
+    public KeyCode fireballKey;
     [Header("菜单按键")]
     public KeyCode menuKey;
     private void Awake()
@@ -54,6 +56,7 @@ public class InputManager : MonoBehaviour
         jumpKey = KeyCode.Z;
         rushKey = KeyCode.C;
         menuKey = KeyCode.Escape;
+        fireballKey = KeyCode.A;
     }
 
     public void stopInput()

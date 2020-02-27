@@ -13,6 +13,10 @@ public class IdleBehaviour : CharacterStateBase
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)//idle状态可以起跑 起跳 转向 掉落
     {
+        if (Input.GetKeyDown(InputManager.getInstance().fireballKey))
+        {
+            animator.SetTrigger("fireballtrigger");
+        }
         if (GetCharacterControl(animator).isRush)
         {
             animator.SetTrigger("rushtrigger");
@@ -82,7 +86,7 @@ public class IdleBehaviour : CharacterStateBase
     // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        
+        animator.SetBool("isidle",false);
     }
 
 }

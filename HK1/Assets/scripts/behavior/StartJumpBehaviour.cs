@@ -13,6 +13,11 @@ public class StartJumpBehaviour : CharacterStateBase
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)//起跳可以停跳，着陆
     {
+        if (Input.GetKeyDown(InputManager.getInstance().fireballKey))
+        {
+            animator.SetTrigger("fireballtrigger");
+            animator.SetBool("isjump",false);
+        }
         if (GetCharacterControl(animator).isRush)
         {
             animator.SetTrigger("rushtrigger");
